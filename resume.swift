@@ -6,13 +6,13 @@
 //  Copyright © 2017 Andrew Apperley All rights reserved.
 //
 
-class AndrewApperley: Human, Husband, IOSDevelopment, BackendDevelopment, ApplicationArchitecture {
+class AndrewApperley: Human, Husband, IOSDevelopment, BackendDevelopment, ApplicationArchitecture, TeamLead {
 
   var _summary: String
   var _education: Dictionary<String, String>
   var _career = Array<Dictionary<String, Any>>
   var _interests = Array<String>
-  var _notableProjects = Array<Dictionary<String, String>>
+  var _recommendations = Array<Dictionary<String, String>>
   
   init() {
     super.init()
@@ -20,6 +20,8 @@ class AndrewApperley: Human, Husband, IOSDevelopment, BackendDevelopment, Applic
     _education = education()
     _career = career()
     _interests = interests()
+    _notableProjects = notableProjects()
+    _recommendations = recommendations()
   }
   
   func summary() -> String {
@@ -102,7 +104,18 @@ class AndrewApperley: Human, Husband, IOSDevelopment, BackendDevelopment, Applic
     ]
   }
   
-  func notableProjects() -> Array<Dictionary<String, String>> {
-  
+  func recommendations() -> Array<Dictionary<String, String>> {
+    return [
+      [
+        "name": "Chris W. Rea",
+        "content": "Andrew is a pleasure to work with, and a true professional and great teammate. " +
+                   "I joined a team late in the development cycle, having to ramp up quickly. Andrew offered " +
+                   "clear, expert answers to my questions, quickly establishing himself as a go-to person on my list. " +
+                   "Andrew's patience, guidance, and review of proposed changes were invaluable, improving the end " +
+                   "product considerably. Andrew's knowledge of development tools and technologies is broad and deep -- he is " +
+                   "the real full stack developer, adept whether working on a mobile app front-end or back-end server API. " +
+                   "It would be a privilege to work with Andrew again. Hire him."
+      ]
+    ]
   }
 }
