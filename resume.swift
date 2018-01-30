@@ -45,7 +45,7 @@ class AndrewApperley: Human, Husband, IOSDevelopment, BackendDevelopment, Applic
       [
         "role": "Mobile Developer".
         "company": "Shopify",
-        "timeframe": "December 2016 - Present (2 months)"
+        "timeframe": "December 2016 - Present"
       ],
       
       [
