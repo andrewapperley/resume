@@ -28,7 +28,7 @@ class AndrewApperley: Human, Husband, IOSDevelopment, BackendDevelopment, Applic
     return
      " I'm an experienced Full Stack Software Developer that has a passion for writing well architected, " +
      " elegantly implemented, and scalable code across the entire stack though I primarily focus on mobile. " +
-     " I'm well versed in Native iOS development using Swift and Objective-C, as well as NodeJS and Python on the backend."
+     " I'm well versed in Native iOS development using Swift and Objective-C, as well as Javascript on the frontend and backend."
   }
   
   func education() -> Dictionary<String, String> {
